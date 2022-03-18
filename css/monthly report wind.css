@@ -1,0 +1,843 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+h1 { 
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 18pt;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding: 0;
+margin: 0;
+margin-top: 6pt;
+
+}
+
+h2 { 
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 16pt;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+border-bottom: 1px solid black;
+padding-top: 0pt;
+padding-bottom: 0pt;
+}
+
+h3 { 
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 14pt;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+h4 { 
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 12pt;
+padding-bottom: 0pt;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+margin: 12pt 0pt 6pt 0pt;
+}
+
+p {
+font-size: 12.0pt;
+font-family:"Times New Roman",'serif';
+margin-top: 12pt;	
+}
+
+p.footnote {
+font-size: 8.0pt;
+font-family:"Times New Roman",'serif';
+margin-top: 0pt;	
+}
+
+li {
+font-size: 12.0pt;
+font-family:"Times New Roman",'serif';
+}
+
+p.notes{
+font-size: 10.0pt;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+margin: 0;
+padding-top: 3pt;
+padding-bottom: 0;
+color: #A9A9A9;	
+border-top: 1px solid #A9A9A9;
+
+}
+
+#logo_text {
+	font-size: 10.0pt;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color: #A9A9A9;	
+}
+
+h5 { 
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 11pt;
+padding-bottom: 0;
+margin: 6pt 0pt 3pt 0pt;
+}
+
+h6 { 
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 16pt;
+padding-bottom: 0;
+padding-bottom: 0;
+margin-top: 6pt;
+text-align: top;
+}
+
+div.cover_logo {
+	
+display: flex;	
+flex-direction: column;
+padding-bottom: 0px;
+padding-bottom: 0px;
+margin: 0;
+text-align: left;
+position: relative;
+width: 3in;
+height:3in;
+left: 4in;	
+top: 1.25in;
+justify-content: bottom;
+}
+
+table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	border-collapse: collapse;
+	padding-top: 6px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+
+td {
+    padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;
+}
+/* tr:nth-child(even) {
+	background-color: #CCCCCC;
+} */
+
+
+th { 
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: bottom;
+  padding-left: 3px;
+  padding-right: 5px;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+  background-color: #FFFFFF;
+  line-height: 1;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+  border-bottom-width: thin;
+}
+/*
+th { 
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: bottom;
+  padding-left: 3px;
+  padding-right: 5px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  line-height: 1.25;
+}*/
+
+tfoot {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000000;
+	background: #CFCFCF;
+	border-top: 3px solid #000000;
+}
+
+/* site summary table */
+table.LR_site_table {
+	table-layout: fixed;
+}
+
+table.LR_site_table th {
+  width:.7in;
+}
+
+table.LR_site_table td {
+	width:.7in;
+   }
+
+table.LR_site_table tr:last-child { background: #CCCCCC; }
+
+/*//////////////////// site summary table Rio /////////////////*/
+table.LR_site_table_rio {
+	table-layout: fixed;
+}
+
+table.LR_site_table_rio th {
+  width:.61in;
+}
+
+table.LR_site_table_rio td {
+	width:.61in;
+   }
+
+table.LR_site_table_rio td:nth-child(9), table.LR_site_table_rio td:nth-child(10) {
+	width:.68in;
+   }
+
+table.LR_site_table_rio tr:last-child { background: #CCCCCC; }
+
+/* Performance Table*/
+table.LR_perf_table tr:last-child { background: #CCCCCC; }
+table.LR_perf_table tr:nth-last-child(2) { background: #CCCCCC; }
+
+
+table.LR_perf_table th { 
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: bottom;
+  padding-left: 3px;
+  padding-right: 8px;
+    
+}
+
+table.LR_perf_table td:first-child {
+	width: .75in;
+}
+
+/* Fault Table*/
+
+table.LR_fault_table {
+	table-layout: fixed;
+}
+
+table.LR_fault_table th{
+ 
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: bottom;
+  padding-left: 3px;
+  padding-right: 12px;
+ 	
+}
+
+table.LR_fault_table td:last-child{
+ 
+  text-align: center;
+ 
+ 	
+}
+
+table.LR_fault_table td:nth-child(1){
+ 
+  width: .5in;
+ 	
+}
+
+table.LR_fault_table td:nth-child(2){
+ 
+  width: 2.75in;
+ 	
+}
+
+table.LR_fault_table td:nth-child(3), table.LR_fault_table td:nth-child(4),table.LR_fault_table td:nth-child(5){
+ 
+  width: .6in;
+ 	
+}
+
+
+/* Lost Energy Table*/
+
+table.LR_lost_energy_table {
+	table-layout: auto;
+	
+}
+
+table.LR_lost_energy_table th{
+  /*width: 100%;*/
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: bottom;
+  padding-left: 3px;
+  padding-right: 6px;
+  text-align: left;
+ 	
+}
+
+table.LR_lost_energy_table td:first-child { 
+
+width: 2in; }
+
+table.LR_lost_energy_table tr:last-child { background: #CCCCCC; }
+
+/* Deficiency Table*/
+table.LR_deficiency_table {
+	table-layout: fixed;
+	padding-left: 3px;
+	padding-right: 6px;
+	width: 6.25in;
+	}
+	
+
+table.LR_deficiency_table td:nth-child(1)  {
+	width: .75in;
+	}
+
+/* mx table*/
+table.mx_table {
+	table-layout: fixed;
+	padding-left: 3px;
+	padding-right: 6px;
+	width: 6.25in;
+	}	
+
+table.mx_table td:nth-child(1)  {
+	width: 1.5in;
+	}
+	
+/* mx table*/
+table.bop_summary {
+	table-layout: fixed;
+	padding-left: 3px;
+	padding-right: 6px;
+	width: 6in;
+	}	
+
+table.bop_summary td:nth-child(1)  {
+	width: 1.5in;
+	}	
+
+/* Safety*/
+
+table.safety_table td{
+  
+  text-align: center;
+ 	
+}
+
+table.safety_table td:first-child {
+  
+  text-align: left;
+ 	
+}
+
+table.safety_table tr:last-child { background: #CCCCCC; }
+
+/*//////////////////////* Financial Table///////////////////////////*/
+table.financial_tble {
+	
+	border-bottom: 0;
+	font-weight: none;
+	white-space: nowrap;
+	text-align: right;
+	table-layout: fixed;
+}
+
+table.financial_tble tr td {
+    padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom:0;
+	padding-left:2px;
+}
+
+
+
+/* Financial Table - column widths*/
+
+table.financial_tble td:nth-child(1){
+    width: 1.85in;
+}
+
+table.financial_tble td:nth-child(2), table.financial_tble td:nth-child(3), table.financial_tble td:nth-child(4), table.financial_tble td:nth-child(5){
+    width: .6in;
+}
+
+table.financial_tble td:nth-child(1), table.financial_tble td:nth-child(6){
+    text-align: left;
+}
+
+
+/*heading rows*/
+table.financial_tble tr:nth-child(3) td:nth-child(1), table.financial_tble tr:nth-child(8) td:nth-child(1)
+, table.financial_tble tr:nth-child(22) td:nth-child(1) {
+ font-weight: bold;
+ padding-left: 0px;
+ padding-top: 6px;
+ text-decoration: underline;
+ }
+
+/*column headings*/
+table.financial_tble tr:nth-child(1) {
+ font-weight: bold;
+ text-decoration: underline;
+}
+
+/*totals rows*/
+table.financial_tble tr:nth-child(7), table.financial_tble tr:nth-child(20), table.financial_tble tr:nth-child(21) {
+ font-weight: bold;
+ padding-left: 0px;
+}
+
+/*EBITDA*/
+table.financial_tble tr:nth-child(21) {
+ padding-top: 6px;
+ border-top-width: thin;
+ border-top-style: solid;
+ border-top-color: #000000;
+ 
+}
+/*add underline*/
+table.financial_tble tr:nth-child(6), table.financial_tble tr:nth-child(19), table.financial_tble tr:nth-child(21)
+{
+
+ border-bottom-width: thin;
+ border-bottom-style: solid;
+ border-bottom-color: #000000;
+ 
+}
+
+/*add underline*/
+table.financial_tble tr:last-child {
+
+ border-bottom-width: thin;
+ border-bottom-style: solid;
+ border-top-width: thin;
+ border-top-style: solid;
+ border-top-color: #000000;
+ border-bottom-color: #000000;
+ font-weight: bold;
+ padding-left: 0px;
+ padding-top: 6px;
+ 
+}
+
+/*comments*/
+table.financial_tble td:nth-child(6) {
+ width: 2.2in;
+ font-style: italic;
+ word-break: break-all;
+ font-weight: lighter;
+ white-space: normal;
+ font-size: 8pt;
+ line-height: .9;
+}
+
+table.financial_tble tr:nth-child(25), table.financial_tble tr:nth-child(32) {
+
+ padding-top: 6px;
+
+ }
+ 
+ table.financial_tble tr td:nth-child(6) {
+
+ border-bottom: 0;
+ border-top: 0;
+
+ }
+ 
+ 
+ /* $1,000s unless otherwise... comment */
+table.financial_tble tr:nth-child(1) td:nth-child(1){
+    font-weight: lighter;
+	font-size: 8pt;
+	text-decoration: none;
+	padding-left: 0px;
+}
+
+/* table.financial_tble td:nth-child(2), table.financial_tble td:nth-child(7){
+    border-bottom:0;
+	width: .1in;
+}
+*/
+/* ///////////////////Financial Table Rio///////////////////////////*/
+table.financial_tble_rio {
+	
+	border-bottom: 0;
+	font-weight: none;
+	white-space: nowrap;
+	text-align: right;
+	table-layout: fixed;
+	/*width: 7in;*/
+}
+
+table.financial_tble_rio tr td {
+    padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom:0;
+	padding-left:2px;
+}
+
+/* Financial Table - column widths*/
+
+table.financial_tble_rio td:nth-child(1){
+    width: 2.0in;
+	text-align: left;
+}
+
+table.financial_tble_rio td:nth-child(2), table.financial_tble_rio td:nth-child(7){
+    width: 0.01in;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+table.financial_tble_rio td:nth-child(3), table.financial_tble_rio td:nth-child(4){
+    width: .6in;
+}
+
+table.financial_tble_rio td:nth-child(5),  table.financial_tble_rio td:nth-child(6){
+    width: .6in;
+}
+
+
+/*heading rows*/
+table.financial_tble_rio tr:nth-child(3) td:nth-child(1), table.financial_tble_rio tr:nth-child(12) td:nth-child(1)
+ {
+ font-weight: bold;
+ padding-left: 0px;
+ padding-top: 6px;
+ text-decoration: underline;
+ }
+
+/*column headings*/
+table.financial_tble_rio tr:nth-child(1) {
+ font-weight: bold;
+ text-decoration: underline;
+}
+
+/*totals rows*/
+table.financial_tble_rio tr:nth-child(9), table.financial_tble_rio tr:nth-child(24){
+ font-weight: bold;
+ padding-left: 0px;
+}
+
+/*energy prices rows*/s
+table.financial_tble_rio tr:nth-child(10) td:nth-child(1), table.financial_tble_rio tr:nth-child(11) td:nth-child(1){
+ font-style: italic;
+}
+
+/*elect sales*/
+table.financial_tble_rio tr:nth-child(5) td:nth-child(1), table.financial_tble_rio tr:nth-child(6) td:nth-child(1)
+{
+ padding-left: 6px;
+}
+
+/*EBITDA*/
+table.financial_tble_rio tr:nth-child(25) {
+ padding-top: 12px;
+ border-top-width: thin;
+ border-top-style: solid;
+ border-top-color: #000000;
+ 
+}
+/*add underline*/
+table.financial_tble_rio tr:nth-child(8), table.financial_tble_rio tr:nth-child(23)
+{
+
+ border-bottom-width: thin;
+ border-bottom-style: solid;
+ border-bottom-color: #000000;
+ 
+}
+
+/*add underline*/
+table.financial_tble_rio tr:last-child {
+
+ border-bottom-width: thin;
+ border-bottom-style: solid;
+ font-weight: bold;
+ padding-left: 0px;
+ padding-top: 12px;
+ 
+}
+/*
+table.financial_tble tr:nth-child(7) table.financial_tble td:nth-child(8) , table.financial_tble tr:nth-child(21) table.financial_tble td:nth-child(8)
+, table.financial_tble tr:nth-child(23) table.financial_tble td:nth-child(8), table.financial_tble tr:nth-child(24) table.financial_tble td:nth-child(8), 
+table.financial_tble tr:nth-child(32) table.financial_tble td:nth-child(8), table.financial_tble tr:nth-child(33) table.financial_tble td:nth-child(8) {
+
+ 
+ border-bottom: 0;
+ border-top:0;
+ 
+}
+*/
+/*comments*/
+table.financial_tble_rio td:nth-child(8) {
+ 
+ font-style: italic;
+ word-break: break-all;
+ font-weight: lighter;
+ white-space: normal;
+ font-size: 8pt;
+ line-height: .9;
+ width: 1.8in;
+ text-align: left;
+}
+
+ 
+ table.financial_tble_rio tr td:nth-child(8) {
+
+ border-bottom: 0;
+ border-top: 0;
+
+ }
+ 
+ table.financial_tble_rio td:nth-child(2), table.financial_tble_rio td:nth-child(7){
+    border-bottom:0;
+	width: .1in;
+}
+
+
+/* //////end financial_tble_rio///////// */
+
+
+/*@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact;
+  }
+}
+*/
+
+h2 {page-break-before: always;}
+
+h1, h2, h3, h4, h5 {
+  page-break-after: avoid;
+}
+	
+/*@page {
+    margin-top: 3cm;
+    margin-bottom: 3cm;
+    margin-left: 4cm;
+    margin-right: cm;
+}
+*/
+@page :first {
+  size: Letter;
+  margin: 1.25in 1in 0 .5in;
+  border-bottom: 0pt solid #666;
+
+  
+  @top-left {
+  content: normal;
+  }
+  @bottom-left {
+  content: normal;
+  }
+   @bottom-right {
+  content: normal;
+  }
+   
+   @bottom-center {
+  content: normal;
+  }
+    @top-right {
+  content: normal;
+  }
+  
+}
+
+article#cover_image {
+	
+	height: 4.5in;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin: 0 -1.25in 0 -1.25in;
+	background-size: cover;
+}
+  
+ /* Set the content of an H1 to the identifier "doctitle" */
+/* h1 { string-set: doctitle content(); } */
+
+h1 { string-set: doctitle content(); }
+h6 { string-set: month_year content(); }
+
+footer {
+flow: static(footer-logo);
+}
+
+
+@page { 
+	size: Letter;
+	margin-top: 2.5cm;
+    margin-bottom: 2.5cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+	border-bottom: .25pt solid #666;
+
+   @bottom-left {
+	   content: "Strictly Confidential";
+       font-size: 9pt;
+       color: #333;
+   }
+
+   @bottom-right { 
+       
+       content: counter(page);
+       font-size: 9pt;
+   }
+   
+     @bottom-center { 
+       
+	   
+	   content: url(Longroad_logo.png);
+
+   }
+   @top-left {
+   	   content: string(doctitle) " " string(month_year);
+   	   margin: 0pt 0 0pt 0;
+   	   font-size: 9pt;
+   	   color: #808080;
+   }
+}
+/* reset chapter and figure counters on the body */
+html body {
+	counter-reset: chapternum figurenum;
+	font-family: "Times New Roman";
+	line-height: 1.5;
+	font-size: 12pt;
+}
+
+/*sections*/
+html body article#lost_energy section {
+	break-inside: avoid-column;
+	columns: 2;
+	column-gap: 1cm;
+	padding-top: 0;
+	margin: 0;
+	}
+	
+	html body article#lost_energy section p{
+	padding-top: 0;
+	margin: 0;}
+
+
+/* get the title of the current chapter - this will be the content of the h1 
+reset figure counter as figures start from 1 in each chapter */
+/* h1 {
+    string-set: doctitle content();
+} */
+
+/* increment chapter counter */
+h2.chapter:before {
+    counter-increment: chapternum;
+    content: counter(chapternum) ". ";
+}
+
+/* increment and display figure counter */
+figcaption:before {
+	counter-increment: figurenum;
+	content: counter(chapternum) "-" counter(figurenum) ". ";
+}
+
+/* footnotes */
+.fn {
+  float: footnote;
+}
+
+.fn {
+  counter-increment: footnote;
+}
+
+.fn::footnote-call {
+  content: counter(footnote);
+  font-size: 9pt;
+  vertical-align: super;
+  line-height: none;
+}
+
+.fn::footnote-marker {
+  font-weight: bold;
+}
+
+@page {
+  @footnotes {
+    border-top: 0.6pt solid black;
+    padding-top: 8pt;
+  }
+}
+/*
+ul.toc {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}*/
+
+/* create page numbers using target-counter in the TOC */
+/*ol.toc a::after {
+  content: leader('_') target-counter(attr(href), page);
+}*/
+
+ol.toc li {
+	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12pt;
+	border-bottom: 1pt dotted black;
+	margin-top:.5em;
+}
+
+ol.toc li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.toctext::before {
+	content: target-text(attr(href));
+}
+.tocpageno {
+	float: right;
+}
+.tocpageno::after {
+	content: target-counter(attr(href), page);
+}
+
+//*
+ol.toc li span.line {
+    border-bottom: 1px dotted #000;
+    width: 100%;
+}
+*//
+
+/* add page number to cross references 
+a.xref:after {
+  content: " (page " target-counter(attr(href, url), page) ")";
+}
+*/

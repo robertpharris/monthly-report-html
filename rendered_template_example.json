@@ -1,0 +1,1147 @@
+{
+  "name": "roberts new template",
+  "maxId": 131,
+  "pages": [
+    {
+      "page": 1,
+      "orientation": "portrait",
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>Weaver</h1><p>72,6 MW Capacity | <strong>22 Vestas V126-3.45MV</strong></p><p>Commercial Operation Date: December 12, 2020</p><p></p><h1><strong>Monthly Operation Report November 2021</strong></h1>",
+          "id": 80,
+          "page": 1,
+          "position": 1,
+          "height": 217
+        },
+        {
+          "name": "List with text",
+          "type": "html",
+          "html": "<h1>New List Box</h1><ul><li><p>New list text</p></li></ul>",
+          "id": 83,
+          "page": 1,
+          "position": 2,
+          "height": 79
+        }
+      ],
+      "height": 296,
+      "key": "undefined.1"
+    },
+    {
+      "sections": [
+        {
+          "name": "List with text",
+          "type": "html",
+          "html": "<h1>Table of content</h1><ol><li><p>Executive Summary</p></li><li><p>Operations Management</p></li><li><p>Safety</p></li><li><p>Financial Performance</p></li><li><p>Site Performance</p></li><li><p>Turbine Performace</p></li><li><p>Balance of Plant</p></li><li><p>Planned Maintenance</p></li><li><p>Definitions</p></li></ol>",
+          "id": 86,
+          "page": 2,
+          "position": 1,
+          "height": 272
+        }
+      ],
+      "page": 2,
+      "height": 272
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>1. Executive Summary</h1><p>For the month of February, Weaver generation was 4,273 MWh (20.2%) below the budgeted production.&nbsp; Year to date generation was 5,554 MWh (12.5%) below the year-to-date budgeted production.</p>",
+          "id": 89,
+          "page": 3,
+          "position": 1,
+          "height": 118
+        }
+      ],
+      "page": 3,
+      "height": 118
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>2. Operations Management</h1><p>During the month of February site availability and net generation were below plan. Lower than budgeted wind and turbine downtime were the main drivers. Details regarding turbine downtime can be found in Table 6.3 Offline and Curtailed Turbine section of this report.</p>",
+          "id": 92,
+          "page": 4,
+          "position": 1,
+          "height": 118
+        },
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>Table 2.1 Key Initiatives</h1>",
+          "id": 95,
+          "page": 4,
+          "position": 2,
+          "height": 64
+        },
+        {
+          "name": "Dynamic table with data from s3",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/wind/2021/november/data/table-2.1-key initiatives.csv",
+          "html": "<table><thead v-if=\"columns\"><tr><td v-for=\"(columnData, colIndex) in columns\" :key=\"`column-${colIndex}`\">{{columnData}}</td></tr></thead><tbody><tr v-for=\"(rowData, rowIndex) in rows\" :key=\"`row-${rowIndex}`\"><td v-for=\"(cellData, cellIndex) in rowData\" :key=\"`row-${rowIndex}-cell-${cellIndex}`\">{{cellData}}</td></tr></tbody></table>",
+          "id": 98,
+          "page": 4,
+          "position": 3,
+          "height": 482,
+          "data": [
+            [
+              "Type of Project or Component",
+              "",
+              "Description",
+              "",
+              "Action",
+              "",
+              "Target Completion"
+            ],
+            [
+              "Year One Performance",
+              "",
+              "Year one of project operation is a critical time for infant mortality failures and for establishing the proper monitoring of project performance.",
+              "",
+              "Closely monitor turbine and balance-of-plant performance to identify early operating issues.",
+              "",
+              "12/31/2021"
+            ],
+            [
+              "Bat Curtailment",
+              "",
+              "Validate Vestas Bat curtailment software to QC functionality for permit compliance.",
+              "",
+              "Monitor the Vestas Bat curtailment software during effective dates April 15-September 30",
+              "",
+              "4/14/2021"
+            ],
+            [
+              "Icing Sound Mode",
+              "",
+              "Validate Vestas software controls to comply with the Weaver Winter Sound Plan.",
+              "",
+              "Monitor Vestas Load and Sound Mode curtailment operation and compare results to performance specification.",
+              "",
+              "1/22/2021"
+            ],
+            [
+              "Intellilight Operation",
+              "",
+              "Validate Vestas RAL-Intellilight functionality",
+              "",
+              "Monitor Vestas Intellilight software is programed and functioning when required",
+              "",
+              "6/1/2021"
+            ],
+            [
+              "Turbine Performance Monitoring ",
+              "",
+              "Monitor turbine operation to assure optimal performance ",
+              "",
+              "Compare performance, utilizing GreenByte and other analytical tools. ",
+              "",
+              "Continuous  "
+            ],
+            [
+              "Construction Final Completion",
+              "",
+              "Final close out items remaining to mark project complete from construction",
+              "",
+              "Manage remaining close out items relating to construction for final completion",
+              "",
+              "Q3 2021"
+            ],
+            [
+              "Setpoint Verification",
+              "",
+              "Validate setpoint accuracy to maintain compliance ",
+              "",
+              "Compare programmed values in Greenbyte to assure they align with the OEM values and site permit requirements  ",
+              "",
+              "1/8/2021"
+            ],
+            []
+          ],
+          "className": ""
+        }
+      ],
+      "page": 4,
+      "height": 664
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>3. Safety</h1>",
+          "id": 101,
+          "page": 5,
+          "position": 1,
+          "height": 64
+        },
+        {
+          "name": "Dynamic table with data from s3",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/wind/2021/november/data/table-3.1-safety.csv",
+          "html": "<table><thead v-if=\"columns\"><tr><td v-for=\"(columnData, colIndex) in columns\" :key=\"`column-${colIndex}`\">{{columnData}}</td></tr></thead><tbody><tr v-for=\"(rowData, rowIndex) in rows\" :key=\"`row-${rowIndex}`\"><td v-for=\"(cellData, cellIndex) in rowData\" :key=\"`row-${rowIndex}-cell-${cellIndex}`\">{{cellData}}</td></tr></tbody></table>",
+          "id": 104,
+          "page": 5,
+          "position": 2,
+          "height": 744,
+          "data": [
+            [
+              "",
+              "Table 3.1 Safety Summary",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Weaver O&M",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Month",
+              "",
+              "Near Miss or Equipment Damage",
+              "",
+              "Non-Recordable Injury",
+              "",
+              "Recordable Injury",
+              "",
+              "Estimated Man Hours"
+            ],
+            [
+              "1",
+              "January",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "160"
+            ],
+            [
+              "2",
+              "February",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "120"
+            ],
+            [
+              "3",
+              "March",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "4",
+              "April",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "5",
+              "May",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0"
+            ],
+            [
+              "6",
+              "June",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0"
+            ],
+            [
+              "7",
+              "July",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0"
+            ],
+            [
+              "8",
+              "August",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0"
+            ],
+            [
+              "9",
+              "September",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "10",
+              "October",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "11",
+              "November",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "12",
+              "December",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "",
+              "Year to Date",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "280"
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Vestas",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "Month",
+              "",
+              "Near Miss or Equipment Damage",
+              "",
+              "Non-Recordable Injury",
+              "",
+              "Recordable Injury",
+              "",
+              "Estimated Man Hours"
+            ],
+            [
+              "1",
+              "January",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "960"
+            ],
+            [
+              "2",
+              "February",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "249"
+            ],
+            [
+              "3",
+              "March",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "4",
+              "April",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "5",
+              "May",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0"
+            ],
+            [
+              "6",
+              "June",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0"
+            ],
+            [
+              "7",
+              "July",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0"
+            ],
+            [
+              "8",
+              "August",
+              "",
+              "0",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "9",
+              "September",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "10",
+              "October",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "11",
+              "November",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "12",
+              "December",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "0"
+            ],
+            [
+              "",
+              "Year to Date",
+              "",
+              "2",
+              "",
+              "0",
+              "",
+              "0",
+              "",
+              "1209"
+            ],
+            []
+          ],
+          "className": ""
+        },
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<ul><li><p>Longroad Energy has a strong safety culture centered on prompt reporting of all near misses or incidents and regular training of all personnel.</p></li><li><p>Weaver experienced no accidents or recordable incidents during February. A safety briefing takes place at morning Plan of the Day meetings to review latest lessons learned and highlight particular areas for additional vigilance.</p></li></ul>",
+          "id": 107,
+          "page": 5,
+          "position": 3,
+          "height": 127
+        }
+      ],
+      "page": 5,
+      "height": 935
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>5. Site Performance</h1>",
+          "id": 110,
+          "page": 6,
+          "position": 1,
+          "height": 64
+        },
+        {
+          "name": "Dynamic table with data from s3",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/wind/2021/november/data/table-6.1-turbine performance.csv",
+          "html": "<table><thead v-if=\"columns\"><tr><td v-for=\"(columnData, colIndex) in columns\" :key=\"`column-${colIndex}`\">{{columnData}}</td></tr></thead><tbody><tr v-for=\"(rowData, rowIndex) in rows\" :key=\"`row-${rowIndex}`\"><td v-for=\"(cellData, cellIndex) in rowData\" :key=\"`row-${rowIndex}-cell-${cellIndex}`\">{{cellData}}</td></tr></tbody></table>",
+          "id": 113,
+          "page": 6,
+          "position": 2,
+          "height": 506,
+          "data": [
+            [
+              "Turbine",
+              "Energy Export (MWh)",
+              "Capacity Factor",
+              "Wind Speed (m/s)",
+              "Contract Lost Energy (MWh)",
+              "Performance Index"
+            ],
+            [
+              "Weaver 3",
+              "732.435",
+              "2.33028273809523806",
+              "6.753739130434783",
+              "2.40182750997092054",
+              "2.9266464129977802"
+            ],
+            [
+              "Weaver 4",
+              "847.934",
+              "2.3823656204906205",
+              "7.215604068469365",
+              "8.852691160294656",
+              "2.9437037879634214"
+            ],
+            [
+              "Weaver 5",
+              "828.446",
+              "2.3735777417027417",
+              "7.151612103174605",
+              "2.4584305980915993",
+              "2.9355268742837336"
+            ],
+            [
+              "Weaver 6",
+              "755.522",
+              "2.3406935425685426",
+              "7.0718998015873025",
+              "2.08135",
+              "2.913872990167753"
+            ],
+            [
+              "Weaver 7",
+              "762.368",
+              "2.3428787878787879",
+              "6.989007444168734",
+              "13.170370835548464",
+              "2.9173409493687383"
+            ],
+            [
+              "Weaver 8",
+              "915.453",
+              "2.4128125",
+              "7.444742063492064",
+              "2.36869507797270956",
+              "2.8967588751196323"
+            ],
+            [
+              "Weaver 9",
+              "221.9747795744681",
+              "2.10009685226121398",
+              "7.640997023809523",
+              "585.2304810217705",
+              "1.0394792666470425"
+            ],
+            [
+              "Weaver 10",
+              "805.086",
+              "2.3630438311688312",
+              "7.221329365079364",
+              "6.436299999999999",
+              "2.89823787539927"
+            ],
+            [
+              "Weaver 11",
+              "848.243",
+              "2.38250496031746034",
+              "7.2229414682539685",
+              "2.0383022771161671",
+              "2.9186150021716976"
+            ],
+            [
+              "Weaver 12",
+              "863.239",
+              "2.38926722582972584",
+              "7.447867063492061",
+              "2.07560000000000003",
+              "2.9098694400386393"
+            ],
+            [
+              "Weaver 13",
+              "742.503",
+              "2.33392090548340553",
+              "7.0127728174603154",
+              "2.0",
+              "2.9017598025689633"
+            ],
+            [
+              "Weaver 14",
+              "782.702",
+              "2.3529500360750361",
+              "7.087251984126985",
+              "2.23371666666666663",
+              "2.9112484799651794"
+            ],
+            [
+              "Weaver 15",
+              "801.602",
+              "2.36147276334776335",
+              "6.953943452380954",
+              "1.2023666666666666",
+              "2.9250354108742482"
+            ],
+            [
+              "Weaver 16",
+              "852.961",
+              "2.3837306096681097",
+              "7.214756944444444",
+              "2.8141866666666667",
+              "2.9191027694913758"
+            ],
+            [
+              "Weaver 17",
+              "926.773",
+              "2.41791711760461764",
+              "7.737301587301587",
+              "2.5559499999999999",
+              "2.8943850450590164"
+            ],
+            [
+              "Weaver 18",
+              "966.104",
+              "2.4356529581529582",
+              "7.961160714285713",
+              "5.832815",
+              "2.8793607335162668"
+            ],
+            [
+              "Weaver 19",
+              "798.042",
+              "2.3598674242424243",
+              "7.738804821749167",
+              "145.41368333333332",
+              "2.9363868568560253"
+            ],
+            [
+              "Weaver 20",
+              "821.68",
+              "2.37052669552669554",
+              "7.2084077380952385",
+              "3.28598947368421",
+              "2.9197838432580967"
+            ],
+            [
+              "Weaver 22",
+              "798.923",
+              "2.3602647005772006",
+              "7.238541666666667",
+              "2.0",
+              "2.9134400429299747"
+            ],
+            [
+              "Weaver 23",
+              "698.277",
+              "2.3148795995670996",
+              "7.0000762001524",
+              "102.10923833333332",
+              "2.9209252550504836"
+            ],
+            [
+              "Weaver 24",
+              "843.034",
+              "2.38015602453102454",
+              "7.3672619047619055",
+              "2.3576",
+              "2.8935366842059687"
+            ],
+            [
+              "Weaver 25",
+              "888.551",
+              "2.40068136724386727",
+              "7.938070436507937",
+              "1.0197393617021275",
+              "2.8815060875233228"
+            ],
+            []
+          ],
+          "className": "redTable"
+        }
+      ],
+      "page": 6,
+      "height": 570,
+      "orientation": "landscape"
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>Table 5.2 Lost Energy</h1><h3>Offline lost energy</h3>",
+          "id": 116,
+          "page": 7,
+          "position": 1,
+          "height": 99
+        },
+        {
+          "name": "Dynamic table with data from s3",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/wind/2021/november/data/table-5.2-lost energy.csv",
+          "html": "<table><thead v-if=\"columns\"><tr><td v-for=\"(columnData, colIndex) in columns\" :key=\"`column-${colIndex}`\">{{columnData}}</td></tr></thead><tbody><tr v-for=\"(rowData, rowIndex) in rows\" :key=\"`row-${rowIndex}`\"><td v-for=\"(cellData, cellIndex) in rowData\" :key=\"`row-${rowIndex}-cell-${cellIndex}`\">{{cellData}}</td></tr></tbody></table>",
+          "id": 119,
+          "page": 7,
+          "position": 2,
+          "height": 277,
+          "data": [
+            [
+              "Category",
+              "Lost Energy (MWh)"
+            ],
+            [
+              "Environmental",
+              "0.46634969298245615"
+            ],
+            [
+              "Manufacturer - Blade Repair",
+              "0.0"
+            ],
+            [
+              "Manufacturer - Fault",
+              "873.9393339828181"
+            ],
+            [
+              "Manufacturer - Gearbox",
+              "0.0"
+            ],
+            [
+              "Manufacturer - Generator",
+              "0.0"
+            ],
+            [
+              "Manufacturer - Other",
+              "0.0"
+            ],
+            [
+              "Manufacturer - Planned Maintenance",
+              "110.6544052631579"
+            ],
+            [
+              "Other",
+              "20.688278454526657"
+            ],
+            [
+              "Owner",
+              "0.0"
+            ],
+            [
+              "Owner - Repair",
+              "0.0"
+            ],
+            [
+              "Utility/BOP",
+              "0.0"
+            ],
+            []
+          ],
+          "className": "borderTable,headerRowTable"
+        }
+      ],
+      "page": 7,
+      "height": 376
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>Figure 5.1 Monthly Energy Production</h1><p></p><img src=\"https://lre-report-api.s3.us-east-1.amazonaws.com/reports/Template%201/static/figure-5.1-monthly%20energy%20production.png?response-content-disposition=inline&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA4aCmV1LW5vcnRoLTEiRzBFAiEAu55mprMoGsfGw4hfMlRKkv4hoX5Ft0I8ViciQAcqifUCIAf%2B2CzwJyHkJ4%2F8b%2BooX38WYASERa%2BqYnbDaCaaNGnwKpwDCMj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQAxoMMDE3MTk2Nzc3MjM4IgyV0kIFniKMGK%2FrH8gq8AIXQyJSjG%2BhWwdstpwJvMpGXk08WunkukZjatusnfqYICYAnY0%2FHGzG3cghl83rnzwO4uYPgnCBe9tzVlNJ8AF61AR6Nr8fzdSJNaqlAbEhRSncS1wJ3wcNfON%2BFGjaSp%2Fhvz0560EqFsONsjR6fDc1wgqUCuJnpDx6jt4Ls9NUrxFUZPsrJ6FpVwB0vqzS5MCmXIHOAaoeZDPZ62TVi%2BzMrFdasj%2BDnSLjRXPF1WOw9V9MJtj4%2BLshiZkngbVPLinm%2FcgC87ImhnR3mg%2F4JMz7eJx2JSaru57lt4qQKKF%2BKavzHkOEu1bRU6KvHAtAR4Os6vXvyXdt5M4n4QHa8a4U6p9TzLwDtttdoaaBMXFxO5h9ptocj6%2Fmku5%2F34Vrv5V0fS50GvByA%2FTx%2FZPMXuu%2FaxiakvdloyEZuAspj9Kte2hkg0EhMy4Do7zpl8WDeb4UB%2FYgvV8oLWeefMw1lVvn6xAaRGQ0pH1XzZISCC5yCTCGqNuMBjqzAg0u4e0VEI6ZZIqORrqWEgBLsxYbL1zdtZzDTVwSt%2FMVmWvqNF6quozCvPJVBhWYJ7mnJcSuEs7DNA9y8Tx3pso%2BcR4klyW6Aayts00SkRsAZrTEn%2F%2FAMxcCzORqFw%2BRQn7F5PMRTeS%2BrAWyqxHPmjk%2Bs%2Bo2n7CmoFhFFjdPZg2F%2F0qFR%2B%2BvrmeJ2QyQuS6M1Zb4fMVGOllVt3OTGLCkpS60JH0kcEsbSXmSXZ518eFXKijsQxPGNiRqkbUSSz1p7KvmssI6OSWGWWH5zS4Tj7Gat5LoFgU9TBwXY2gGeYdDTgh4q8Pfzf472Dv%2BSR5Y4A5sjePcttkohIikzKMSPnw%2BtUxCnLT9SdXuvNIjBbz%2BMS0X6zZL63vnqw6Jab91qnPg0slYmfQnKcncCGpnvh2BMfc%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20211118T224315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIAQIAIB74LNASPY4SS%2F20211118%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=8b3ce7315fb12aacca6e0aeabebb00e2d643a4d986182eb2b96831a4cc2aaa6f\">",
+          "id": 122,
+          "page": 8,
+          "position": 1,
+          "height": 74
+        }
+      ],
+      "page": 8,
+      "height": 74
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>Figure 5.2 Daily Wind Speed and Availability</h1><p></p><img src=\"https://lre-report-api.s3.amazonaws.com/reports/Template+1/static/figure-5.2-daily+wind+speed.png\">",
+          "id": 125,
+          "page": 9,
+          "position": 1,
+          "height": 74
+        }
+      ],
+      "page": 9,
+      "height": 74
+    },
+    {
+      "sections": [
+        {
+          "name": "Text paragraph",
+          "type": "html",
+          "html": "<h1>6. Turbine Performance</h1><h3>Table 6.1 Turbine Performance</h3>",
+          "id": 128,
+          "page": 10,
+          "position": 1,
+          "height": 99
+        }
+      ],
+      "page": 10,
+      "height": 99
+    },
+    {
+      "sections": [
+        {
+          "name": "Dynamic table with data from s3",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/wind/2021/november/data/table-6.1-turbine performance.csv",
+          "html": "<table><thead v-if=\"columns\"><tr><td v-for=\"(columnData, colIndex) in columns\" :key=\"`column-${colIndex}`\">{{columnData}}</td></tr></thead><tbody><tr v-for=\"(rowData, rowIndex) in rows\" :key=\"`row-${rowIndex}`\"><td v-for=\"(cellData, cellIndex) in rowData\" :key=\"`row-${rowIndex}-cell-${cellIndex}`\">{{cellData}}</td></tr></tbody></table>",
+          "id": 131,
+          "page": 11,
+          "position": 1,
+          "data": [
+            [
+              "Turbine",
+              "Energy Export (MWh)",
+              "Capacity Factor",
+              "Wind Speed (m/s)",
+              "Contract Lost Energy (MWh)",
+              "Performance Index"
+            ],
+            [
+              "Weaver 3",
+              "732.435",
+              "2.33028273809523806",
+              "6.753739130434783",
+              "2.40182750997092054",
+              "2.9266464129977802"
+            ],
+            [
+              "Weaver 4",
+              "847.934",
+              "2.3823656204906205",
+              "7.215604068469365",
+              "8.852691160294656",
+              "2.9437037879634214"
+            ],
+            [
+              "Weaver 5",
+              "828.446",
+              "2.3735777417027417",
+              "7.151612103174605",
+              "2.4584305980915993",
+              "2.9355268742837336"
+            ],
+            [
+              "Weaver 6",
+              "755.522",
+              "2.3406935425685426",
+              "7.0718998015873025",
+              "2.08135",
+              "2.913872990167753"
+            ],
+            [
+              "Weaver 7",
+              "762.368",
+              "2.3428787878787879",
+              "6.989007444168734",
+              "13.170370835548464",
+              "2.9173409493687383"
+            ],
+            [
+              "Weaver 8",
+              "915.453",
+              "2.4128125",
+              "7.444742063492064",
+              "2.36869507797270956",
+              "2.8967588751196323"
+            ],
+            [
+              "Weaver 9",
+              "221.9747795744681",
+              "2.10009685226121398",
+              "7.640997023809523",
+              "585.2304810217705",
+              "1.0394792666470425"
+            ],
+            [
+              "Weaver 10",
+              "805.086",
+              "2.3630438311688312",
+              "7.221329365079364",
+              "6.436299999999999",
+              "2.89823787539927"
+            ],
+            [
+              "Weaver 11",
+              "848.243",
+              "2.38250496031746034",
+              "7.2229414682539685",
+              "2.0383022771161671",
+              "2.9186150021716976"
+            ],
+            [
+              "Weaver 12",
+              "863.239",
+              "2.38926722582972584",
+              "7.447867063492061",
+              "2.07560000000000003",
+              "2.9098694400386393"
+            ],
+            [
+              "Weaver 13",
+              "742.503",
+              "2.33392090548340553",
+              "7.0127728174603154",
+              "2.0",
+              "2.9017598025689633"
+            ],
+            [
+              "Weaver 14",
+              "782.702",
+              "2.3529500360750361",
+              "7.087251984126985",
+              "2.23371666666666663",
+              "2.9112484799651794"
+            ],
+            [
+              "Weaver 15",
+              "801.602",
+              "2.36147276334776335",
+              "6.953943452380954",
+              "1.2023666666666666",
+              "2.9250354108742482"
+            ],
+            [
+              "Weaver 16",
+              "852.961",
+              "2.3837306096681097",
+              "7.214756944444444",
+              "2.8141866666666667",
+              "2.9191027694913758"
+            ],
+            [
+              "Weaver 17",
+              "926.773",
+              "2.41791711760461764",
+              "7.737301587301587",
+              "2.5559499999999999",
+              "2.8943850450590164"
+            ],
+            [
+              "Weaver 18",
+              "966.104",
+              "2.4356529581529582",
+              "7.961160714285713",
+              "5.832815",
+              "2.8793607335162668"
+            ],
+            [
+              "Weaver 19",
+              "798.042",
+              "2.3598674242424243",
+              "7.738804821749167",
+              "145.41368333333332",
+              "2.9363868568560253"
+            ],
+            [
+              "Weaver 20",
+              "821.68",
+              "2.37052669552669554",
+              "7.2084077380952385",
+              "3.28598947368421",
+              "2.9197838432580967"
+            ],
+            [
+              "Weaver 22",
+              "798.923",
+              "2.3602647005772006",
+              "7.238541666666667",
+              "2.0",
+              "2.9134400429299747"
+            ],
+            [
+              "Weaver 23",
+              "698.277",
+              "2.3148795995670996",
+              "7.0000762001524",
+              "102.10923833333332",
+              "2.9209252550504836"
+            ],
+            [
+              "Weaver 24",
+              "843.034",
+              "2.38015602453102454",
+              "7.3672619047619055",
+              "2.3576",
+              "2.8935366842059687"
+            ],
+            [
+              "Weaver 25",
+              "888.551",
+              "2.40068136724386727",
+              "7.938070436507937",
+              "1.0197393617021275",
+              "2.8815060875233228"
+            ],
+            []
+          ],
+          "height": 920,
+          "className": ""
+        }
+      ],
+      "page": 11,
+      "height": 920
+    }
+  ],
+  "totalPages": 11
+}

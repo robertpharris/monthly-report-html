@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{ report_title }} {{ month_year }}</title>
+<link href="monthly report wind.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+
+
+<article id = "cover_image", style = "background-image: url({{cover_pic}})" ></article>
+
+
+<h1>{{ report_title }}</h1>
+<p class = "notes" >{{ cover_notes }}</p>
+
+<h6>  Monthly Operating Report {{ month_year }} </h6>
+
+<div class = "cover_logo">
+<span id = "logo_text"> prepared by</span>
+<img src="Longroad_logo_big.png"  alt="Logo" style="width:2.5in"/>
+</div>
+
+  <div class="contents">
+    <h2>Table of Contents</h2>
+    <ol class="toc">
+          <li>
+          <a href="#exec" class = "toctext"></a> <a href="#exec" class = "tocpageno"></a>
+          </li>
+			<li>
+          <a href="#am" class = "toctext"></a> <a href="#am" class = "tocpageno"></a>
+          </li>
+	        <li>
+          <a href="#safety" class = "toctext"></a> <a href="#safety" class = "tocpageno"></a>
+          </li>
+		  <li>
+          <a href="#finance" class = "toctext"></a> <a href="#finance" class = "tocpageno"></a>
+          </li>
+	        <li>
+          <a href="#site" class = "toctext"></a> <a href="#site" class = "tocpageno"></a>
+          </li>
+           <li>
+          <a href="#turbine" class = "toctext"></a> <a href="#turbine" class = "tocpageno"></a>
+          </li>
+         <li>
+          <a href="#bop" class = "toctext"></a> <a href="#bop" class = "tocpageno"></a>
+          </li>
+
+		<li>
+          <a href="#mx" class = "toctext"></a> <a href="#mx" class = "tocpageno"></a>
+          </li>
+        <li>
+          <a href="#sup" class = "toctext"></a> <a href="#sup" class = "tocpageno"></a>
+          </li>
+        <li>
+          <a href="#app" class = "toctext"></a> <a href="#app" class = "tocpageno"></a>
+          </li>
+
+
+        </ol>
+
+    </div>
+
+<h2 id="exec" class="chapter"> Executive Summary</h2>
+{% include  exec_text ignore missing %}
+
+
+<h2 id="am" class="chapter" style="page-break-before: never;">Operations Management</h2>
+{% include am_text ignore missing %}
+
+
+<h2 id="safety" class="chapter">  Safety</h2>
+{% include  safe_text  ignore missing %}
+
+<h4>Table 3.1 Safety Summary</h4>
+{{safety_table}}
+
+<h2 id="finance" class="chapter"> Financial Performance</h2>
+<!-- Loop through mtd financials using finance_mtd dictionary-->
+{% for project, finance in finance_mtd.items() %}
+<article style="page-break-after: always;">
+<h4> Table 4.{{loop.index}} {{ month_year }} Financial Performance</h4>
+
+{{finance}}
+</article>
+{% endfor %}
+
+<!-- end mtd financials loop -->
+
+<!-- Loop through ytd financials using finance_mtd dictionary-->
+{% for project, finance in finance_ytd.items() %}
+<h4 style="page-break-before: always;">Table 4.{{loop.index + finance_mtd|length}} Year to Date Financial Performance</h4>
+
+{{finance}}
+
+{% endfor %}
+<!-- end ytd financials loop -->
+
+
+<h2 id="site" class="chapter">  Site Performance</h2>
+
+<h4>Table 5.1 Site Summary</h4>
+
+{{site_table}}
+<!-- add footnote if Milford-->
+{% if project.find('Milford') >= 0 %}
+<p class = "footnote">*wind speed in April excludes time associated with planned outage due to communication loss</p>
+{% endif %}
+
+<h4 style="page-break-before: never;">Figure 5.1 Monthly Energy Production</h4>
+<img src= "{{energy_figure}}" alt="Energy Plot" style="width:5in" />
+
+
+<h2 id="turbine" class="chapter">Turbine Performance</h2>
+
+
+<h3>6.1 Performance Tables</h3>
+
+<h4>Table 6.1 Turbine Performance</h4>
+
+{{turbine_table_1}}
+
+
+
+<article id = "lost_energy">
+
+	<h3 style="page-break-before: always;">6.2 Lost Energy</h3>
+
+	<h4> Table 6.2 Lost Energy</h4>
+
+	<section>
+
+	<p>
+	<h5>Offline Lost Energy</h5>
+	{{lost_energy_tbl_1}}
+	</p>
+
+	<p>
+	<h5>Curtailment Lost Energy</h5>
+	{{curtail_tbl_1}}
+	</p>
+
+	</section>
+
+
+</article>
+
+
+<h3>6.3 Offline and Curtailed Turbines</h3>
+
+
+<h4>Table 6.3 Offline and curtailed turbines</h4>
+
+{{def_table_1}}
+
+<h3>6.4 Turbine Faults</h3>
+
+<h4>Table 6.4 Top 12 Turbine Fault and Event States by Lost Energy</h4>
+
+{{fault_table_1}}
+
+
+
+<h3 style="page-break-before: always;">6.5 Wind Speed and Availability</h3>
+
+<h4> Figure 6.5 Wind Speed and Availability</h4>
+
+<img src= "{{avail_plt_1}}" alt="Energy Plot" style="width:5in" />
+
+
+
+<h2 id="bop" class="chapter"> Balance of Plant Activities</h2>
+<p>{{bop_notes}}</p>
+
+<h3>7.1 Balance of Plant and Offtaker Curtailment and Outages</h3>
+<p> The project had no balance of plant or offtaker directed curtailment for the month. </p>
+<h4> Table 7.1 Curtailment Summary</h4>
+<table width="85%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th scope="col">Description</th>
+    <th scope="col">Start Date</th>
+    <th scope="col">End Date</th>
+    <th scope="col">Reason</th>
+
+  </tr>
+  <tr>
+    <td>No Offtaker Curtailment</td>
+    <td> &nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+  </tr>
+</table>
+
+<h2 id="mx" class="chapter"> Planned Maintenance</h2>
+<h4> Table 8.1 Maintenance Summary</h4>
+{{mx_table}}
+
+<h2 id="sup" class="chapter"> Supplemental</h2>
+{{supplement}}
+
+<h2 id="app" class="chapter"> Definitions</h2>
+{{defs}}
+</body>
+</html>

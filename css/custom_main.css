@@ -1,12 +1,68 @@
+/*#################Prose Mirror is used for web app styling###########*/
+
 .ProseMirror p {
-  margin: 0 0 10px;
+  font-family:"Times New Roman",'serif';
+  margin: 0 0 10pt 10pt;
   font-size: 11pt;
-  font-family: "Open Sans", serif;
 }
 .ProseMirror h1 {
-  font-size: 22pt;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 18pt;
+  letter-spacing: 0pt;
+  word-spacing: 2pt;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 6pt
+}
+
+.ProseMirror h2 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16pt;
+  letter-spacing: 0pt;
+  word-spacing: 2pt;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
   border-bottom: 1px solid black;
-  padding-bottom: 8px;
+  padding-top: 0pt;
+  padding-bottom: 0pt
+}
+
+.ProseMirror h3 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14pt;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none
+}
+
+.ProseMirror h4 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 12pt;
+  padding-bottom: 0pt;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  margin: 12pt 0pt 6pt 0pt
 }
 
 .ProseMirror ol {
@@ -16,7 +72,36 @@
   display: inline;
 }
 
-th, td {
+.background-image {
+    position: relative;
+    left: -17mm;
+    width: 210mm;
+}
+
+.logo-cover {
+    position: relative;
+    left: 40mm;
+    width: 40mm;
+    scale: 40%
+}
+
+.page-footer {
+  font-size: 8.0pt;
+  font-family:"Times New Roman",'serif';
+  margin-top: 0pt;
+  color: #A9A9A9;
+}
+
+.page-header {
+  font-size: 8.0pt;
+  font-family:"Times New Roman",'serif';
+  margin-top: 0pt;
+  color: #A9A9A9;
+}
+
+
+
+/*##th, td {
   padding: 2px;
   font-size: 12px;
   vertical-align: top;
@@ -27,6 +112,9 @@ th, td {
 .redTable td{
   background: red;
 }
+
+ */
+
 
 .borderTable td {
   border-bottom: 1px solid grey !important;
@@ -42,39 +130,48 @@ th, td {
 .headerRowTable thead tr:first-child td {
   font-weight: bold;
 }
+/*##########################from custom main#############*/
+.small-right {
+  text-align: right;
+}
+
+.small-right img {width: 120px !important;}
 
 /*##########################Updated for reports#############*/
 /*//////////////////////* Paragraphs///////////////////////////*/
-p {
+.lre p {
 font-size: 12.0pt;
 font-family:"Times New Roman",'serif';
 margin-top: 12pt;
 }
 
-p.footnote {
+.footnote {
 font-size: 8.0pt;
 font-family:"Times New Roman",'serif';
 margin-top: 0pt;
 }
 
-li {
+.lre li {
 font-size: 12.0pt;
 font-family:"Times New Roman",'serif';
 }
 
-p.notes{
-font-size: 10.0pt;
-font-family:"Trebuchet MS", Helvetica, sans-serif;
-margin: 0;
-padding-top: 3pt;
-padding-bottom: 0;
-color: #A9A9A9;
-border-top: 1px solid #A9A9A9;
-
+.lre-cover-notes {
+  font-size: 10.0pt;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-align: right;
+  margin: 0;
+  padding-top: 3pt;
+  padding-bottom: 0;
+  color: #A9A9A9;
+  border-top: 1px solid #A9A9A9;
+  border-bottom: 1px solid #A9A9A9;
 }
 
+
+
 /*//////////////////////* Headings///////////////////////////*/
-h1 {
+.lre h1 {
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-size: 18pt;
 letter-spacing: 0px;
@@ -87,13 +184,13 @@ font-variant: normal;
 text-transform: none;
 padding: 0;
 margin: 0;
-margin-top: 6pt;
+margin-top: 6pt
 
 }
 
-h2 {
+.lre h2 {
 font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-size: 16pt;
+font-size: 3px;
 letter-spacing: 0px;
 word-spacing: 2px;
 color: #000000;
@@ -104,10 +201,10 @@ font-variant: normal;
 text-transform: none;
 border-bottom: 1px solid black;
 padding-top: 0pt;
-padding-bottom: 0pt;
+padding-bottom: 0pt
 }
 
-h3 {
+.lre h3 {
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-size: 14pt;
 letter-spacing: 0px;
@@ -117,10 +214,10 @@ font-weight: 700;
 text-decoration: none;
 font-style: normal;
 font-variant: normal;
-text-transform: none;
+text-transform: none
 }
 
-h4 {
+.lre h4 {
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-size: 6pt;
 padding-bottom: 0pt;
@@ -132,8 +229,37 @@ text-decoration: none;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-margin: 12pt 0pt 6pt 0pt;
+margin: 12pt 0pt 6pt 0pt
 }
+
+.heading-green {font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 32px;
+padding-bottom: 0px;
+color: #008000;
+  border-bottom: 3px solid black;
+  font-weight: 700;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+margin: 12pt 0pt 6pt 0pt}
+
+
+/*
+.section p {font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 10pt;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+  border-bottom: 2pt solid black;
+font-variant: normal;
+text-transform: none;
+}
+*/
 
 /*//////////////////////* Default Table///////////////////////////*/
 table {
@@ -173,16 +299,16 @@ th {
 }
 
 /*//////////////////////* Financial Table///////////////////////////*/
-table.financial_tble {
+table.financial_table {
 
 	border-bottom: 0;
-	font-weight: none;
+	font-weight: 400;
 	white-space: nowrap;
 	text-align: right;
 	table-layout: fixed;
 }
 
-table.financial_tble tr td {
+table.financial_table tr td {
     padding-top: 2px;
 	padding-bottom: 2px;
 	border-bottom:0;
@@ -191,22 +317,22 @@ table.financial_tble tr td {
 
 /* Financial Table - column widths*/
 
-table.financial_tble td:nth-child(1){
+table.financial_table td:nth-child(1){
     width: 1.85in;
 }
 
-table.financial_tble td:nth-child(2), table.financial_tble td:nth-child(3), table.financial_tble td:nth-child(4), table.financial_tble td:nth-child(5){
+table.financial_table td:nth-child(2), table.financial_tble td:nth-child(3), table.financial_tble td:nth-child(4), table.financial_tble td:nth-child(5){
     width: .6in;
 }
 
-table.financial_tble td:nth-child(1), table.financial_tble td:nth-child(6){
+table.financial_table td:nth-child(1), table.financial_tble td:nth-child(6){
     text-align: left;
 }
 
 
 /*heading rows*/
-table.financial_tble tr:nth-child(3) td:nth-child(1), table.financial_tble tr:nth-child(8) td:nth-child(1)
-, table.financial_tble tr:nth-child(22) td:nth-child(1) {
+table.financial_table tr:nth-child(3) td:nth-child(1), table.financial_tble tr:nth-child(8) td:nth-child(1)
+, table.financial_table tr:nth-child(22) td:nth-child(1) {
  font-weight: bold;
  padding-left: 0px;
  padding-top: 6px;
@@ -214,19 +340,19 @@ table.financial_tble tr:nth-child(3) td:nth-child(1), table.financial_tble tr:nt
  }
 
 /*column headings*/
-table.financial_tble tr:nth-child(1) {
+table.financial_table tr:nth-child(1) {
  font-weight: bold;
  text-decoration: underline;
 }
 
 /*totals rows*/
-table.financial_tble tr:nth-child(7), table.financial_tble tr:nth-child(20), table.financial_tble tr:nth-child(21) {
+table.financial_table tr:nth-child(7), table.financial_tble tr:nth-child(20), table.financial_tble tr:nth-child(21) {
  font-weight: bold;
  padding-left: 0px;
 }
 
 /*EBITDA*/
-table.financial_tble tr:nth-child(21) {
+table.financial_table tr:nth-child(21) {
  padding-top: 6px;
  border-top-width: thin;
  border-top-style: solid;
@@ -234,7 +360,7 @@ table.financial_tble tr:nth-child(21) {
 
 }
 /*add underline*/
-table.financial_tble tr:nth-child(6), table.financial_tble tr:nth-child(19), table.financial_tble tr:nth-child(21)
+table.financial_table tr:nth-child(6), table.financial_tble tr:nth-child(19), table.financial_tble tr:nth-child(21)
 {
 
  border-bottom-width: thin;
@@ -244,7 +370,7 @@ table.financial_tble tr:nth-child(6), table.financial_tble tr:nth-child(19), tab
 }
 
 /*add underline*/
-table.financial_tble tr:last-child {
+table.financial_table tr:last-child {
 
  border-bottom-width: thin;
  border-bottom-style: solid;
@@ -259,7 +385,7 @@ table.financial_tble tr:last-child {
 }
 
 /*comments*/
-table.financial_tble td:nth-child(6) {
+table.financial_table td:nth-child(6) {
  width: 2.2in;
  font-style: italic;
  word-break: break-all;
@@ -269,13 +395,13 @@ table.financial_tble td:nth-child(6) {
  line-height: .9;
 }
 
-table.financial_tble tr:nth-child(25), table.financial_tble tr:nth-child(32) {
+table.financial_table tr:nth-child(25), table.financial_tble tr:nth-child(32) {
 
  padding-top: 6px;
 
  }
 
- table.financial_tble tr td:nth-child(6) {
+ table.financial_table tr td:nth-child(6) {
 
  border-bottom: 0;
  border-top: 0;

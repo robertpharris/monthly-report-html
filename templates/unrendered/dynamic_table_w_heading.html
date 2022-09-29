@@ -1,0 +1,13 @@
+<h4>{{heading}}</h4>
+<table>
+  <thead v-if="columns">
+  <tr>
+    <td v-for="(columnData, colIndex) in columns" :key="`column-${colIndex}`">{{columnData}}</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr v-for="(rowData, rowIndex) in rows" :key="`row-${rowIndex}`">
+    <td v-for="(cellData, cellIndex) in rowData" :key="`row-${rowIndex}-cell-${cellIndex}`">{{cellData}}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,485 @@
+{
+  "name": "wind_default",
+  "maxId": 31,
+  "pages": [
+    {
+      "page": 1,
+      "orientation": "portrait",
+      "height": 272,
+      "sections": [
+        {
+          "name": "Cover Image",
+          "type": "image",
+          "source": "s3://lre-report-api/static/image1.png",
+          "html": "",
+          "id": 1,
+          "page": 1,
+          "position": 1,
+          "height": 251,
+          "className": "background-image",
+          "isSourceManually": true
+        },
+
+                {
+          "name": "Cover Text",
+          "type": "rawhtml",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_cover.html",
+           "id": 1,
+          "page": 1,
+          "position": 2,
+          "height": 1
+        },
+        {
+          "name": "logo",
+          "type": "image",
+          "source": "s3://lre-report-api/static/Longroad_logo_big.png",
+          "html": "",
+          "id": 1,
+          "page": 1,
+          "position": 3,
+          "height": 251,
+          "className": "logo-cover",
+          "isSourceManually": true
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "height": 272,
+      "sections": [
+        {
+          "name": "Table of Contents",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_toc.html",
+          "id": 4,
+          "page": 2,
+          "position": 1,
+          "height": 272
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "height": 118,
+      "sections": [
+        {
+          "name": "section: 1. Executive Summary",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_1_exec_summary.html",
+          "id": 5,
+          "page": 3,
+          "position": 1,
+          "height": 118
+        },
+        {
+          "name": "caption: Generic Caption",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/generic_caption.html",
+          "id": 1,
+          "page": 3,
+          "position": 2,
+          "height": 1
+        },
+        {
+          "name": "caption: Table 1.1 Kpi Summary",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_kpi_summary.html",
+          "id": 12,
+          "page": 9,
+          "position": 3,
+          "height": 127
+        },
+        {
+          "name": "dynamic table: Table 1.1 Kpi Summary",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/kpi_summary_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/dynamic_table.html",
+          "id": 7,
+          "page": 3,
+          "position": 4,
+          "height": 64,
+          "data": [],
+          "className": ""
+        }
+      ]
+
+    },
+    {
+      "page": 4,
+      "height": 443,
+      "sections": [
+        {
+          "name": "section: 2. Operations Management",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_2_ops_management.html",
+          "id": 6,
+          "page": 4,
+          "position": 1,
+          "height": 118
+        },
+
+        {
+          "name": "dynamic table: Table 2.1 Key Initiatives",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/key_initiatives_{{ asset }}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_key_initiatives.html",
+          "id": 7,
+          "page": 4,
+          "position": 3,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "height": 255,
+      "sections": [
+        {
+          "name": "section: 3. Safety",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_3_safety.html",
+          "id": 9,
+          "page": 5,
+          "position": 1,
+          "height": 64
+        },
+
+        {
+          "name": "dynamic table: Table 3.1 Safety Summary",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/safety_{{ asset }}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_safety.html",
+          "id": 11,
+          "page": 5,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": ""
+        },
+        {
+          "name": "text: safety text",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_3_safety_text.html",
+          "id": 12,
+          "page": 5,
+          "position": 3,
+          "height": 127
+        }
+      ]
+
+    },
+    {
+      "page": 6,
+      "height": 128,
+      "sections": [
+        {
+          "name": "section: 4. Financial Performance",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_4_financial_performance.html",
+          "id": 13,
+          "page": 6,
+          "position": 1,
+          "height": 64
+        },
+
+        {
+          "name": "dynamic table: 4.1 {{ MONTH }} Financial Performance",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/mtd_financial_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_mtd_financials.html",
+          "id": 14,
+          "page": 6,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "financial_table"
+        }
+      ]
+    },
+    {"page": 7,
+       "height": 128,
+      "sections":
+        [{
+          "name": "dynamic table: Table 4.2 Year to Date Financial Performance",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/ytd_financial_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_ytd_financials.html",
+          "id": 14,
+          "page": 7,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "financial_table"
+        }
+      ]
+    },
+
+    {
+      "page": 8,
+      "height": 74,
+      "sections": [
+        {
+          "name": "dynamic table: Table 4.3 REC Summary",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/rec_summary_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_rec_summary.html",
+          "id": 14,
+          "page": 8,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        }
+      ]
+    },
+    {  "page": 9,
+      "height": 74,
+      "sections": [
+        {
+          "name": "section: 5. Site Performance",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_5_site_performance.html",
+          "id": 13,
+          "page": 9,
+          "position": 1,
+          "height": 64
+        },
+        {
+          "name": "dynamic table: Table 5.1 Site Summary",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/site_summary_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_site_summary.html",
+          "id": 14,
+          "page": 9,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        },
+        {
+          "name": "dynamic table: Table 5.2 Lost Energy",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/lost_energy_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_lost_energy.html",
+          "id": 14,
+          "page": 9,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        },
+        {
+          "name": "caption: Figure 5.1 Monthly Energy Production",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/caption_figure_5.1.html",
+          "id": 12,
+          "page": 9,
+          "position": 3,
+          "height": 127
+        },
+        {
+          "name": "figure: 5.1-monthly energy",
+          "type": "image",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/ytd_perf_{{asset}}.png",
+          "html": "",
+          "id": 14,
+          "page": 9,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_image"
+        },
+         {
+          "name": "caption: Figure 5.2 Daily Wind Speed and Project Availability",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/caption_figure_5.2.html",
+          "id": 12,
+          "page": 9,
+          "position": 3,
+          "height": 127
+        },
+        {
+          "name": "figure: 5.2-daily wind speed",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/daily_perf_{{asset}}.png",
+          "html": "",
+          "id": 14,
+          "page": 9,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_image"
+        }
+
+      ]
+    },
+    {
+      "page": 10,
+      "height": 99,
+      "sections": [
+       {
+          "name": "section: 6. Turbine Performance",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_6_turbine_performance.html",
+          "id": 13,
+          "page": 10,
+          "position": 1,
+          "height": 64
+        },
+
+        {
+          "name": "dynamic table: Table 6.1 Turbine Performance",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/turbine_perf_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_turbine_perf.html",
+          "id": 14,
+          "page": 10,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        },
+        {
+          "name": "dynamic table: Table 6.2 Offline and Curtailed (current month over 7 days)",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/off_curtail_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_off_curtail.html",
+          "id": 14,
+          "page": 10,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        },
+
+        {
+          "name": "dynamic table: Table 6.3 Top Turbine Faults",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/Milford 1/{{year}}/{{month}}/data/fault_summary_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_fault_summary.html",
+          "id": 14,
+          "page": 10,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "height": 64,
+      "sections": [
+        {
+          "name": "section: 7. Balance of Plant",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_7_balance_of_plant.html",
+          "id": 13,
+          "page": 11,
+          "position": 1,
+          "height": 64
+        },
+
+        {
+          "name": "dynamic table: Table 7.1 Balance of Plant Outages",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/bop_out_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_bop_out.html",
+          "id": 14,
+          "page": 11,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        },
+
+        {
+          "name": "dynamic table: Table 7.2 Grid Operator Curtailment",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/grid_curtailment_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_grid_curtailment.html",
+          "id": 14,
+          "page": 11,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "height": 74,
+      "sections": [
+        {
+          "name": "section: 8. Planned Maintenance",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_8_planned maintenance.html",
+          "id": 13,
+          "page": 12,
+          "position": 1,
+          "height": 64
+        },
+        {
+          "name": "dynamic table: Table 8.1 Maintenance Summary",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/maintenance_log_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_maintenance_log.html",
+          "id": 14,
+          "page": 12,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": ""
+        }
+      ]
+    },
+
+    {
+      "page": 13,
+      "height": 74,
+      "sections": [
+        {
+          "name": "section: 9. Compliance",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_9_compliance.html",
+          "id": 13,
+          "page": 11,
+          "position": 1,
+          "height": 64
+        },
+
+        {
+          "name": "dynamic table: Table 9.1 Compliance Log",
+          "type": "table",
+          "source": "s3://lre-report-api/reports/monthly operating/{{asset}}/{{year}}/{{month}}/data/compliance_log_{{asset}}.csv",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/table_compliance_log.html",
+          "id": 14,
+          "page": 13,
+          "position": 2,
+          "height": 64,
+          "data": [],
+          "className": "default_table"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "height": 74,
+      "sections": [
+        {
+          "name": "section: 10. Definitions",
+          "type": "html",
+          "html": "s3://lre-report-api.s3.amazonaws.com/templates/wind_default/sections/section_10_definitions.html",
+          "id": 13,
+          "page": 14,
+          "position": 1,
+          "height": 64
+        }
+      ]
+    }
+    ],
+  "totalPages": 14
+}

@@ -12,3 +12,23 @@ table_list = {'Table':{1.1:'KPI Summary',2.1:'Key Initiatives', 3.1: 'Safety Sum
                           7: 'Balance of Plant', 8: 'Planned Maintenance', 9:'Compliance', 10: 'Definitions'}
 
 }
+import boto3
+import re
+import json
+s3 = boto3.client('s3')
+BUCKET = 'lre-report-api'#/templates/wind_template/
+file_list = s3.list_objects(Bucket=BUCKET)['Contents']
+
+# read in template
+
+
+
+#keys = []
+#for d in file_list:
+#    mtch = re.match('.*temp_nw_transfer/project_number=.*',  d['Key'])
+#    if mtch:
+#        keys.append(mtch.group(0))
+ #       project = re.match('.*temp_nw_transfer/project_number=(.*)/',  d['Key']).group(1)
+ #       prefix = re.match('.*temp_nw_transfer/project_number=.*/([0-9]*_[0-9]*_[0-9]*).*',  d['Key']).group(1)
+ #       name = 'C:\\Users\\robert.pharris\downloads\\' + prefix + "_" + project + '.gz'
+ #       s3.download_file(BUCKET, mtch.group(0), name)
